@@ -6,9 +6,7 @@ ENV SITE_DESCRIPTION "What this site is about."
 ENV SITE_URL "http://news.example.com"
 ENV PARENT_URL "http://www.example.com"
 ENV FAVICON_URL "/arc.png"
-
 ENV ADMIN_USER admin
-
 ENV RGB_COLOR B4B4B4
 
 ENV GA_CODE disabled

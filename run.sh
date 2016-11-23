@@ -18,10 +18,11 @@ sed -ie "s/color 180 180 180/color $((16#${RGB_COLOR:0:2})) $((16#${RGB_COLOR:2:
 # Place tmp irectory inside exported volume to avoid system error: Invalid cross-device link; errno=18
 sed -ie 's/tmpdir\* \"tmp\"/tmpdir\* \"www\/tmp\"/g' arc.arc
 
-# If defined, add Google Analytics tracking code:
-if [ $GA_CODE != 'disabled' ]; then
-   sed -e "s/UA-XXXXXXXX-1/$GA_CODE/g" ga.arc >> lib/news.arc
-   sed -ie '/pr votejs/a (tag script (pr ga*))' lib/news.arc
+# If defined and not pressent, add Google Analytics tracking code:
+ga_line=$(grep 'pr ga' lib/news.arc|wc -l)
+if [ $GA_CODE != 'disabled' && $ga_line -lt 1 ]; then
+  sed -e "s/UA-XXXXXXXX-1/$GA_CODE/g" ga.arc >> lib/news.arc
+  sed -ie '/pr votejs/a (tag script (pr ga*))' lib/news.arc
 fi
 
 if [ ! -f www/admins ]; then
