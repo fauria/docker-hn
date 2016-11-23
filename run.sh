@@ -20,7 +20,7 @@ sed -ie 's/tmpdir\* \"tmp\"/tmpdir\* \"www\/tmp\"/g' arc.arc
 
 # If defined and not pressent, add Google Analytics tracking code:
 ga_line=$(grep 'pr ga' lib/news.arc|wc -l)
-if [ $GA_CODE != 'disabled' && $ga_line -lt 1 ]; then
+if [[ $GA_CODE != 'disabled' && $ga_line -lt 1 ]]; then
   sed -e "s/UA-XXXXXXXX-1/$GA_CODE/g" ga.arc >> lib/news.arc
   sed -ie '/pr votejs/a (tag script (pr ga*))' lib/news.arc
 fi
