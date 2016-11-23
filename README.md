@@ -31,56 +31,56 @@ Environment variables
 
 The customization of the HN clone is done through the following environment variables:
 
-* Variable name: SITE_NAME
+* Variable name: `SITE_NAME`
 * Default value: "My Forum"
 * Accepted values: Any string.
 * Description: Sets the site name, displayed in the top bar and used as the page title.
 
 ----
 
-* Variable name: SITE_DESCRIPTION
+* Variable name: `SITE_DESCRIPTION`
 * Default value: "What this site is about."
 * Accepted values: Any string.
 * Description: Sets the description of the site.
 
 ----
 
-* Variable name: SITE_URL
+* Variable name: `SITE_URL`
 * Default value: "http://news.example.com"
 * Accepted values: Public URL of the site.
 * Description: Sets is the main URL of the site.
 
 ----
 
-* Variable name: PARENT_URL
+* Variable name: `PARENT_URL`
 * Default value: "http://www.example.com"
 * Accepted values: Any URL.
 * Description: Sets is the URL of the parent site, linked through the logo on the top bar. If there is no parent site, use the same value as in `SITE_URL`.
 
 ----
 
-* Variable name: ADMIN_USER
+* Variable name: `ADMIN_USER`
 * Default value: "admin"
 * Accepted values: Any valid username.
 * Description: Username of the admin user. After launching your site, register an account with that username to get admin privileges.
 
 ----
 
-* Variable name: RGB_COLOR
+* Variable name: `RGB_COLOR`
 * Default value: "B4B4B4"
 * Accepted values: Any RGB color expressed in hexadecimal, without hash.
 * Description: Sets the color for the top bar. Grey by default.
 
 ----
 
-* Variable name: FAVICON_URL
+* Variable name: `FAVICON_URL`
 * Default value: "/arc.png"
 * Accepted values: Any path or URL.
 * Description: Location of the favicon. By default, it uses the same file as the logo.
 
 ----
 
-* Variable name: GA_CODE
+* Variable name: `GA_CODE`
 * Default value: "disabled"
 * Accepted values: A Google Analytics tracking code, such as *UA-12345678-9*
 * Description: If specified, adds a Google Analytics tracking code to the site.
@@ -90,7 +90,7 @@ The customization of the HN clone is done through the following environment vari
 Exposed port and volumnes
 ----
 
-The image exposes port `8080` and exports two volumes: 
+The image exposes port `8080` and exports two volumes:
 
 * `/anarki/static`: Static files such as images. `UID`: 0, `GID`: 2.
 * `/anarki/www`: User generated content and logs. `UID`: 0, `GID`: 2.
