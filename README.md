@@ -87,7 +87,7 @@ The customization of the HN clone is done through the following environment vari
 
 ----
 
-Exposed port and volumnes
+Exposed port and volumes
 ----
 
 The image exposes port `8080` and exports two volumes:
