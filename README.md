@@ -3,6 +3,10 @@ fauria/hn
 
 ![docker_logo](https://raw.githubusercontent.com/fauria/docker-hn/master/docker_139x115.png)![docker_fauria_logo](https://raw.githubusercontent.com/fauria/docker-hn/master/docker_fauria_161x115.png)
 
+[![Docker Pulls](https://img.shields.io/docker/pulls/fauria/hn.svg?style=plastic)](https://hub.docker.com/r/fauria/hn/)
+[![Docker Build Status](https://img.shields.io/docker/build/fauria/hn.svg?style=plastic)](https://hub.docker.com/r/fauria/hn/builds/)
+[![](https://images.microbadger.com/badges/image/fauria/hn.svg)](https://microbadger.com/images/fauria/hn "fauria/hn")
+
 Roll your own [Hacker News](http://news.ycombinator.com) clone with this Docker image.
 
 It is based on [Anarki](https://github.com/arclanguage/anarki), a publicly modifiable 'wiki-like' fork of [Arc Lisp](http://www.paulgraham.com/arc.html).
