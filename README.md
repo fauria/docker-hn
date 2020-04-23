@@ -108,7 +108,7 @@ Use cases
 docker run -i -t --rm -e SITE_URL="http://127.0.0.1/" -e PARENT_URL="http://127.0.0.1/" -p 80:8080 fauria/hn
 ```
 
-#### Create a production container, such as [KeyDao](https://keydao.com):
+#### Create a production container:
 
 ```
 docker run -e RGB_COLOR="649afa" -e ADMIN_USER=fauria -e SITE_NAME="KeyDao" -e SITE_DESCRIPTION="BlockChain news aggregator" -e SITE_URL="https://keydao.com/" -e PARENT_URL="https://keydao.com/" -e GA_CODE="UA-87936404-1" -p $COREOS_PRIVATE_IPV4:8080 -v /srv/keydao/www:/anarki/www -v /srv/keydao/static:/anarki/static -d --restart=always --name keydao fauria/hn
