@@ -20,7 +20,7 @@ It allows the customization of the following features:
 * Admin user
 * Google Analytics code
 
-Installation from [Docker registry hub](https://registry.hub.docker.com/u/fauria/hn/).
+Installation from [Docker registry hub](https://registry.hub.docker.com/r/fauria/hn/).
 ----
 
 You can download the image using the following command:
